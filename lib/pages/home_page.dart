@@ -11,13 +11,17 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: kColorPrimary,
       body: SafeArea(
-        child: Column(
-          children: const [
-            Text('Hi Afsar, Welcome'),
-            Text('to Silent Moon'),
-            Text(
-                'Explore the app, Find some peace of mind to prepare for meditation.'),
-          ],
+        child: Stack(
+          children: [
+            Column(
+              children: [
+                Text('Hi Afsar, Welcome'),
+                Text('to Silent Moon'),
+                Text(
+                    'Explore the app, Find some peace of mind to prepare for meditation.'),
+              ],
+            ),
+          ]
         ),
       ),
     );
